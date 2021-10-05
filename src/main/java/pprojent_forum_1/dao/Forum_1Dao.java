@@ -7,6 +7,7 @@ import pprojent_forum_1.dto.Forum_1;
 public interface Forum_1Dao {
 	ArrayList<Forum_1> selectForum_1ByAll();
 	
+	ArrayList<Forum_1> selectForum_1ByNum(String Search);
 	ArrayList<Forum_1> selectForum_1ByName(String Search);
 	ArrayList<Forum_1> selectForum_1ByContent(String Search);
 	

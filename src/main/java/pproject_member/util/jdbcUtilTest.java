@@ -1,7 +1,5 @@
 package pproject_member.util;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.sql.Connection;
 
 import org.junit.Assert;

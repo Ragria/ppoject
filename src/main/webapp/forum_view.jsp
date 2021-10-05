@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/basic.css">
 <link rel="stylesheet" href="css/forum.css">
-<link rel="stylesheet" href="/css/forum_viewList.css">
+<link rel="stylesheet" href="/css/forum_view.css">
 
 
 </head>
@@ -26,7 +26,7 @@
 		<div class="container">
 			<%if(forumNum == 1){
 				%>
-				<jsp:include page="forum_1/forum_1_viewList.jsp"></jsp:include>
+				<jsp:include page="forum_1/forum_1_view.jsp"></jsp:include>
 				<%
 			}
 			%>

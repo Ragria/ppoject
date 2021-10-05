@@ -39,7 +39,7 @@
 								%>
 								<tr>
 									<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getTitle() %></td>
+									<td><a href="/forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum()%>"><%=forum.selectForum_1ByAll().get(i).getTitle() %></a></td>
 									<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
 									<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
 								</tr>
@@ -51,7 +51,7 @@
 								%>
 								<tr>
 									<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getTitle() %></td>
+									<td><a href="forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum() %>"><%=forum.selectForum_1ByAll().get(i).getTitle()%></a></td>
 									<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
 									<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
 								</tr>
@@ -122,7 +122,7 @@
 								%>
 								<%if(session.getAttribute("num")!=null){
 								
-									%><button>글쓰기</button><%
+									%><a href="forum_insert.jsp?forum=1"><button>글쓰기</button></a><%
 								}
 								
 								%>
