@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.num{
+	width: 50px;
+}
+.title{
+	width: 300px;
+}
+.name{
+	width: 100px;
+}
+.time{
+	width: 100px;
+}
+table {
+	margin-left: 135px;
+}

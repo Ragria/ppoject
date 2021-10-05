@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.wrapper{
+	position:  relative;
+	
+}
+
+.wrap{
+	position: absolute;
+	width: 1024px;
+	left: 50%;
+	margin-left: -512px;
+}
+
+.container{
+	
+	width: 820px;
+	left: 50%;
+	margin-left: 102px;
+}
+
+
+
+

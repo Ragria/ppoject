@@ -1,0 +1,34 @@
+#notice{
+	width: 100%;
+	height: 100px;
+	margin-top: 15px
+}
+
+.forum{
+	margin-top: 15px;
+	display: flex;
+	
+}
+
+.forum div{
+	width: 400px;
+	height: 350px;
+}
+
+#forum1{
+	margin-right: 15px
+}
+
+.gallery{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.gallery div{
+	width: 100%;
+	height: 170px;
+}
+
+#gallery2{
+	margin-top: 15px
+}

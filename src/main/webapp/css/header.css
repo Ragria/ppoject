@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.continer{
+	/* border: 1px solid black; */
+	width: 100%;
+	height: 100px;
+	display: flex;
+}
+
+.continer div{
+	margin: 0;
+	padding: 0;
+ 	border: 0px solid black;  
+	
+}
+
+.logo{
+	width: 155px;
+	height: 100px;
+	background-color: black;
+}
+
+
+.center{
+	width: 726px;
+	height: 100px;
+}
+
+#top{
+	width: 100%;
+	height: 68%;
+	background-color: white;
+}
+
+#menubar{
+	margin-top: -15px;
+	width: 100%;
+	height: 30%;
+	background-color: rgb(214,255,227);
+
+}
+
+#menubar ul{
+	display: flex;
+	list-style: none;
+}
+
+#menubar ul li{
+	margin-top: 5px;
+	margin-right: 10px;
+	font-weight: bold;
+	
+}
+
+.login_join_box{
+	width: 143px;
+	height: 100px
+}
+
+#login{
+	width: 100%;
+	height: 49%
+}
+
+#login button{
+	width: 100%;
+	height: 100%
+}
+
+#join{
+	width: 100%;
+	height: 49%
+}
+
+#join button{
+	width: 100%;
+	height: 100%
+}
