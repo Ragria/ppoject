@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#name{
+	width: 70px;
+	table-layout: fixed;
+	word-break:break-all;
+	height: auto;
+}
+
+#reply{
+	width: 370px;
+}

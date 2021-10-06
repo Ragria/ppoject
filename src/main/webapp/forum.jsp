@@ -1,4 +1,4 @@
-<%@page import="pprojent_forum_1.dao.impl.Forum_1DaoImpl"%>
+<%@page import="pproject_forum_1.dao.impl.Forum_1DaoImpl"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page session="true" %>

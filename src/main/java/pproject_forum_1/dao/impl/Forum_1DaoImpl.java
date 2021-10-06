@@ -1,4 +1,4 @@
-package pprojent_forum_1.dao.impl;
+package pproject_forum_1.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import pproject_member.util.jdbcUtil;
-import pprojent_forum_1.dao.Forum_1Dao;
-import pprojent_forum_1.dto.Forum_1;
+import pproject_forum_1.dao.Forum_1Dao;
+import pproject_forum_1.dto.Forum_1;
 
 public class Forum_1DaoImpl implements Forum_1Dao {
 	private static final Forum_1DaoImpl instance = new Forum_1DaoImpl();

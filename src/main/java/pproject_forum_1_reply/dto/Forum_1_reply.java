@@ -1,67 +1,50 @@
-package pprojent_forum_1.dto;
+package pproject_forum_1_reply.dto;
 
-public class Forum_1 {
+public class Forum_1_reply {
 	
-
 	private String num;
-	private String title;
 	private String content;
 	private String name;
 	private String reg_date;
 	private String member_num;
-	
-	public String getNum() {
-		return num;
+	private String forum_1_num;
+	public Forum_1_reply() {
+		// TODO Auto-generated constructor stub
 	}
 	
-	
-	
-	public Forum_1(String num) {
+	public Forum_1_reply(String num) {
 		super();
 		this.num = num;
 	}
 
-
-
-	public Forum_1(String num, String title, String content) {
+	public Forum_1_reply(String num, String content) {
 		super();
-		this.title = title;
+		this.num = num;
 		this.content = content;
-		this.num = num;
 	}
 
-
-
-	public Forum_1(String title, String content, String name, String member_num) {
+	public Forum_1_reply( String content, String name, String member_num, String forum_1_num) {
 		super();
-		this.title = title;
 		this.content = content;
 		this.name = name;
 		this.member_num = member_num;
+		this.forum_1_num = forum_1_num;
 	}
-	
-
-	public Forum_1(String num, String title, String content, String name, String reg_date, String member_num) {
+	public Forum_1_reply(String num, String content, String name, String reg_date, String member_num,
+			String forum_1_num) {
 		super();
 		this.num = num;
-		this.title = title;
 		this.content = content;
 		this.name = name;
 		this.reg_date = reg_date;
 		this.member_num = member_num;
+		this.forum_1_num = forum_1_num;
 	}
-
-	public Forum_1() {
-		// TODO Auto-generated constructor stub
+	public String getNum() {
+		return num;
 	}
 	public void setNum(String num) {
 		this.num = num;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
 	}
 	public String getContent() {
 		return content;
@@ -87,11 +70,16 @@ public class Forum_1 {
 	public void setMember_num(String member_num) {
 		this.member_num = member_num;
 	}
-	
+	public String getForum_1_num() {
+		return forum_1_num;
+	}
+	public void setForum_1_num(String forum_1_num) {
+		this.forum_1_num = forum_1_num;
+	}
 	@Override
 	public String toString() {
-		return "Forum_1 [num=" + num + ", title=" + title + ", content=" + content + ", name=" + name + ", reg_date="
-				+ reg_date + ", member_num=" + member_num + "]";
+		return "Forum_1_reply [num=" + num + ", content=" + content + ", name=" + name + ", reg_date=" + reg_date
+				+ ", member_num=" + member_num + ", forum_1_num=" + forum_1_num + "]";
 	}
 
 }

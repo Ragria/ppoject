@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#name{
+	width: 70px;
+	table-layout: fixed;
+	word-break:break-all;
+	height: auto;
+}
+#content{
+	width: 350px;
+	table-layout: fixed;
+	word-break:break-all;
+	height: auto;
+}
+#date{
+	width: 100px;
+	table-layout: fixed;
+	word-break:break-all;
+	height: auto;
+}

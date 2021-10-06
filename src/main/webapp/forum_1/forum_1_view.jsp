@@ -1,5 +1,5 @@
-<%@page import="pprojent_forum_1.dao.impl.Forum_1DaoImpl"%>
-<%@page import="pprojent_forum_1.dto.Forum_1"%>
+<%@page import="pproject_forum_1.dao.impl.Forum_1DaoImpl"%>
+<%@page import="pproject_forum_1.dto.Forum_1"%>
 <%@page session="true" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

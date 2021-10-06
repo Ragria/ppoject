@@ -1,8 +1,8 @@
-package pprojent_forum_1.dao;
+package pproject_forum_1.dao;
 
 import java.util.ArrayList;
 
-import pprojent_forum_1.dto.Forum_1;
+import pproject_forum_1.dto.Forum_1;
 
 public interface Forum_1Dao {
 	ArrayList<Forum_1> selectForum_1ByAll();

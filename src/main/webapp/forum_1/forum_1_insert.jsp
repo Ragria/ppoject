@@ -1,6 +1,6 @@
 <%@page import="pproject_member.dao.impl.MemberDaoImpl"%>
-<%@page import="pprojent_forum_1.dao.impl.Forum_1DaoImpl"%>
-<%@page import="pprojent_forum_1.dto.Forum_1"%>
+<%@page import="pproject_forum_1.dao.impl.Forum_1DaoImpl"%>
+<%@page import="pproject_forum_1.dto.Forum_1"%>
 <%@page session="true" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -25,7 +25,7 @@
 				
 						<tr>
 						
-							<td id="title" colspan="4">
+							<td colspan="4">
 								<h2><input type="text" name="title" id="title"> </h2>
 							</td>
 	

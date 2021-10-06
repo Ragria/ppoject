@@ -2,5 +2,7 @@
 
 .forumBord{
 	width: 800px;
-	height: 650px;
+}
+#box{
+	margin-top: 75px;
 }
