@@ -41,8 +41,8 @@
 						
 						</tr>
 						
-						<tr id="writing">
-							<td colspan="4">
+						<tr>
+							<td id="writing" colspan="4">
 								<%= forum.selectForum_1ByNum(pageNum).get(0).getContent().replace("\r\n", "<br>") %>
 							</td>
 						</tr>

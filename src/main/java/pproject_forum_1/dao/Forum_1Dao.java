@@ -9,6 +9,7 @@ public interface Forum_1Dao {
 	
 	ArrayList<Forum_1> selectForum_1ByNum(String Search);
 	ArrayList<Forum_1> selectForum_1ByName(String Search);
+	ArrayList<Forum_1> selectForum_1ByTitle(String Search);
 	ArrayList<Forum_1> selectForum_1ByContent(String Search);
 	
 	int insertForum_1(Forum_1 forum_1);

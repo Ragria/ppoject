@@ -11,7 +11,7 @@ select * from member where id like 'a';
 select * from forum_1;
 
 insert into forum_1 (title, content, name, member_num)
-			values ("제목", "내용", "테스트1", 2);
+			values ("제목", "내용", "테스트1", 1);
 		
 delete from forum_1 where num = 3;
 		
@@ -27,3 +27,5 @@ select * from forum_1_reply where num like 1;
 
 update forum_1_reply set content = "우우" where num = 2;
 delete from forum_1_reply  where num = 2;
+
+select * from forum_1 where title like "%제목%";

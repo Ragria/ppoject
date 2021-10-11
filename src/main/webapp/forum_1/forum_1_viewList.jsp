@@ -14,7 +14,7 @@
 					String getpage = request.getParameter("page");
 					double forumSize = forum.selectForum_1ByAll().size();
 					int nowPage = Integer.parseInt(getpage);
-					int forumNum = 10;	//한페이지 게시글수
+					int forumNum = 11;	//한페이지 게시글수 + 1
 					int pageNum = 10;	//
 					int pageStart = 1;
 					int pageMax =  (int)(Math.ceil(forumSize / forumNum)); //페이지 마지막번호
@@ -33,33 +33,35 @@
 						<td class="time">작성시간</td>
 					</tr>
 					
-					<% if(nowPage != pageMax){
-							for(int i = startForum;i > endForum; i--){
-								
-								%>
-								<tr>
-									<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
-									<td><a href="/forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum()%>"><%=forum.selectForum_1ByAll().get(i).getTitle() %></a></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
-								</tr>
-								<%
+					<% 
+					if(forumSize != 0){
+						if(nowPage != pageMax){
+								for(int i = startForum;i > endForum; i--){
+									
+									%>
+									<tr>
+										<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
+										<td><a href="/forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum()%>"><%=forum.selectForum_1ByAll().get(i).getTitle() %></a></td>
+										<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
+										<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
+									</tr>
+									<%
+								}
+							
+							}else{
+								for(int i = startForum; i >= 0; i--){
+									%>
+									<tr>
+										<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
+										<td><a href="forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum() %>"><%=forum.selectForum_1ByAll().get(i).getTitle()%></a></td>
+										<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
+										<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
+									</tr>
+									<%
+								}
 							}
-						
-						}else{
-							for(int i = startForum; i >= 0; i--){
-								%>
-								<tr>
-									<td><%=forum.selectForum_1ByAll().get(i).getNum() %></td>
-									<td><a href="forum_view.jsp?forum=1&pageNum=<%= forum.selectForum_1ByAll().get(i).getNum() %>"><%=forum.selectForum_1ByAll().get(i).getTitle()%></a></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getName() %></td>
-									<td><%=forum.selectForum_1ByAll().get(i).getReg_date()%></td>
-								</tr>
-								<%
-							}
-						}
 					
-						
+						}
 						%>
 						<tr>
 							<td colspan="4">
@@ -91,7 +93,7 @@
 								
 								}
 								%>
-								<%=nowPage%>
+								<strong><%=nowPage%></strong>
 								<%
 								for(int i = nowPage, next = nowPage+2; i <  next; i++ ){
 									if(i > pageMax-1){
@@ -128,6 +130,21 @@
 								%>
 								
 								
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<form action="/forum_select.jsp">
+									<input type="hidden" name="forum" value="1">
+									<input type="hidden" name="page" value="1">
+									<select name="select">
+										<option value="title">제목</option>
+										<option value="content">내용</option>
+										<option value="name">작성자</option>
+									</select>
+									<input type="text" name="search">
+									<input type="submit" value="검색">
+								</form>
 							</td>
 						</tr>
 						

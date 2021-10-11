@@ -169,6 +169,53 @@ public class Forum_1DaoImpl implements Forum_1Dao {
 		
 		return list;
 	}
+	
+	@Override
+	public ArrayList<Forum_1> selectForum_1ByTitle(String Search) {
+		
+		ArrayList<Forum_1> list = null;
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select * from forum_1 where title like ?";
+		
+		try {
+				Class.forName("com.mysql.jdbc.Driver");
+				
+				con = jdbcUtil.getConnection();
+				
+				
+				pstmt = con.prepareStatement(sql);
+				pstmt.setString(1, Search);
+				
+				rs = pstmt.executeQuery();
+				
+				
+				list = new ArrayList<Forum_1>();
+				
+				while(rs.next()){
+					Forum_1 forum = getForum_1(rs);
+					list.add(forum);
+					
+				}
+		}catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			
+			try {
+				rs.close();
+				pstmt.close();
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		return list;
+	}
 
 	@Override
 	public ArrayList<Forum_1> selectForum_1ByContent(String Search) {

@@ -30,7 +30,7 @@ String pageNum = request.getParameter("pageNum");
 		<div class="container">
 			<%if(forumNum == 1){
 				%>
-				<jsp:include page="forum_1/forum_1_view.jsp"></jsp:include>
+				<jsp:include page="/forum_1/forum_1_view.jsp"></jsp:include>
 				
 				<%
 			}

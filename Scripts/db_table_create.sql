@@ -43,3 +43,5 @@ create table forum_1_reply(
 		on update NO action
 );
 
+DROP TABLE forum_1_reply;
+DROP TABLE forum_1;

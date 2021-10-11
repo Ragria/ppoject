@@ -36,18 +36,18 @@
  --%>
  
  <% 	
- /* for(int i = 0; i < 100; i++){
-	 forum_1.insertForum_1(new Forum_1("제목테스트33"+i , "내용테스트"+i, "대장", "1")); 
- } */
- 
- 
- 
+/*  for(int i = 0; i < 100; i++){
+	 forum_1.insertForum_1(new Forum_1("제목테스트"+i , "내용테스트"+i, "대장", "1")); 
+ }  */
  %>
+ 
  <% //forum_1.updateForum_1(new Forum_1("5", "수정제목", "수정내용")); %>
  <% //forum_1.deleteForum_1(new Forum_1("3")); %>
  
  <%= f1_re.selectForum_1_replyByAll() %>
  <%// f1_re.insertForum_1_reply(new Forum_1_reply("아아아", "대장","1","1")); %>
+
+
 
 </body>
 </html>

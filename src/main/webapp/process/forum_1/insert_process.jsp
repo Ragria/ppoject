@@ -10,23 +10,35 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%	
 	
-		Forum_1DaoImpl forum_1 = new Forum_1DaoImpl();
-	
-		String title = request.getParameter("title");
-		String content = request.getParameter("content");
-		String name = request.getParameter("name");
-		String member_num = request.getParameter("member_num");
-	
-		forum_1.insertForum_1(new Forum_1(title, content, name, member_num));
-		
-		
-	%>
 	
 	<script type="text/javascript">
 		
+	<%	
+	
+	Forum_1DaoImpl forum_1 = new Forum_1DaoImpl();
+
+	String title = request.getParameter("title");
+	String content = request.getParameter("content");
+	String name = request.getParameter("name");
+	String member_num = request.getParameter("member_num");
+	
+	if(title == ""){
+		%>
+		alert("제목을 적어주세요.");
+		history.go(-1);
+		<%
+	}else{
+		forum_1.insertForum_1(new Forum_1(title, content, name, member_num));
+		%>
 		location.href= "/forum.jsp?forum=1&page=1";
+		<%
+	}
+
+	
+	%>
+	
+		
 		
 	
 	</script>

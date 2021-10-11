@@ -26,7 +26,7 @@
 		<div class="container">
 			<%if(forumNum == 1){
 				%>
-				<jsp:include page="forum_1/forum_1_update.jsp"></jsp:include>
+				<jsp:include page="/forum_1/forum_1_update.jsp"></jsp:include>
 				<%
 			}
 			%>

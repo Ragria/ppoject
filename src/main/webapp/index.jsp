@@ -27,7 +27,7 @@
 			<div class="forum">
 				
 				<div id="forum1">
-				<%= session.getAttribute("name") %>
+				 <jsp:include page="forum_1/forum_1_preview.jsp"></jsp:include>
 				</div>
 			
 				<div id="forum2">

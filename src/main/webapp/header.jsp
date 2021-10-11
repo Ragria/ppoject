@@ -6,7 +6,7 @@
 <div class="continer">
 
 	<div class="logo">
-	 <p>로고위치</p>	
+	 <a href="index.jsp">로고위치 누르면 홈</a>	
 	
 	</div>
 	
@@ -46,7 +46,7 @@
 			}else{
 				%>
 				
-				<button>내정보</button>
+				<button onclick="location.href = './myInfo.jsp'">내정보</button>
 				
 				<%
 			}
