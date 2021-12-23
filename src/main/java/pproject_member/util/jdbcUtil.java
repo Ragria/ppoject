@@ -11,7 +11,7 @@ public class jdbcUtil {
 		Connection con = null;
 		String url = "jdbc:mysql://localhost:3306/p_project?useSSL=false";
 		String user = "root";
-		String password = "root";
+		String password = "rootroot";
 		
 		try {
 			con = DriverManager.getConnection(url, user, password);
